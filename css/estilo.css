@@ -1,0 +1,10 @@
+@charset "utf-8";
+[data-role="header"] img {
+	height: 4em;
+	width: auto;
+	float: left;
+}
+.ui-header .ui-title {
+	font-size: 1.5em;
+}
+
