@@ -3,9 +3,9 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.staffgrafico.golpasion"
         versionCode = "1" 
-        version     = "0.0.1" >
+        version     = "0.0.2" >
 
-    <!-- versionCode is optional and Android only -->
+    <!-- versionCode is optional and Android only -->git hub 
 
     <name>Gol Pasión</name>
 
