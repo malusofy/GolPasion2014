@@ -5,5 +5,7 @@
 	float: left;
 }
 .ui-header .ui-title {
-	font-size: 1.5em;
+	font-size: 1em;
+	text-overflow: clip;
+	overflow: visible;
 }
