@@ -5,7 +5,25 @@
 	float: left;
 }
 .ui-header .ui-title {
+<<<<<<< HEAD
 	font-size: 1em;
 	text-overflow: clip;
 	overflow: visible;
+=======
+	font-size: 1.5em;
+	
+>>>>>>> f6be2f8706942125dda89f0bbb0271d21297b067
+}
+.ui-header .ui-title {
+	overflow: visible;
+}
+[data-role="header"] a {
+	padding: .5em .5em;
+	top: 0;
+	left: 0;
+}
+[data-role="header"] a>img {
+	height: 3.75em;
+	vertical-align: middle;
+	float: none;
 }
