@@ -4,80 +4,298 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Documento sin título</title>
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<link rel="stylesheet" href="themes/golpasion.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.min.css" />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/estilo.css" rel="stylesheet" type="text/css">
+<script>
+	var puntajeTrivia,nombreConcursante;
+</script>
 </head>
 <body>
 
 
-<div data-role="page" id="index"><!-- Página 1 -->
+<div data-role="page" id="index" data-theme="b"><!-- Página noticias -->
 	<div data-theme="b" data-role="header" data-position="fixed">
 		<img src="img/logo.png">
-			<h3>
+			<h6>
 			Gol Pasión 2014
-			</h3>
-            
-    </div>
+			</h6>
+     </div>
 
 <div role="main" class="ui-content">
-	<div>
-		<img src="#">
-	</div>
-
-	<div data-controltype="textblock">
-		<p style="text-align: justify;">
-			<span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis
-                    vestibulum odio vel laoreet. Pellentesque vel eros neque. Sed mi leo, rhoncus
-                    eu hendrerit ac, tincidunt vel ligula. Cras eget porttitor nibh, lacinia
-                    consequat lectus. Nullam ut lobortis turpis. Donec feugiat, turpis at accumsan
-                    auctor, dui enim ullamcorper eros, vitae elementum ipsum justo in orci.
-                    Nunc nec vestibulum tellus, vitae faucibus risus. Sed varius, lorem nec
-                    elementum dapibus, nisl neque adipiscing lorem, sed tincidunt sem nulla
-                    at est. Integer elementum nulla eget nisl tincidunt, sed blandit nulla
-                    commodo.
-			</span>
-		</p>
-	</div>
-
-	<div>
-		<img src="#" align="absbottom">
-	</div>
-
-	<div data-controltype="textblock">
-		<p style="text-align: justify;">
-			<span>
-                    Vestibulum posuere nibh lectus, et bibendum lacus elementum ac. Nam dictum
-                    orci nec tristique tincidunt. Cras cursus erat ac ipsum sodales faucibus.
-                    Aenean accumsan urna id erat tempus sodales. Donec dignissim lectus quis
-                    mi faucibus vulputate. Aenean a vehicula nisl, mattis sollicitudin sapien.
-                    Nam erat nisi, imperdiet quis justo id, porta tempus tortor. Mauris ac
-                    neque in dolor tempus dignissim. Vestibulum tincidunt, urna interdum hendrerit
-                    ultricies, purus magna viverra tellus, et posuere nibh nulla nec nisl.
-                    Sed et pellentesque elit, nec faucibus ante. Curabitur vitae iaculis mi,
-                    quis rhoncus urna.
-			</span>
-		</p>
-	</div>
+<h3 style="text-align:center">Las principales noticias son cortesía del El Tiempo.com</h3>
+<ul data-role="listview" data-inset="true">
+    <li><a href="#noticia1">
+        <img src="img/Roy Hodgson enc.jpg">
+    <h2>DT de México ve al equipo en condiciones óptimas para el Mundial</h2>
+    <p>27 de Mayo del 2014 / Miguel Herrera afirmó que el 'Tri' tiene expectativas largas en Brasil-2014.</p></a>
+    </li>
+    <li><a href="#noticia2">
+        <img src="img/seleccioncolombia enc.jpg">
+    <h2>La Selección de Argentina comenzó sus entrenamientos para el Mundial</h2>
+    <p>27 de Mayo del 2014 / El equipo dirigido por Alejandro Sabella dio a conocer su plan de trabajo hasta el 9 de junio.</p></a>
+    </li>
+    <li><a href="#noticia3">
+        <img src="img/copacabanaincendio enc.jpg">
+    <h2>Japón, rival de Colombia, venció 1-0 a Chipre en amistoso</h2>
+    <p>27 de Mayo del 2014 / El gol del equipo nipón llegó tras una jugada entre Okazaki y Kagawa, que finalizó Uchida.</p></a>
+    </li>
+    <li><a href="#noticia4">
+        <img src="img/sexoycahos enc.jpg">
+    <h2>Marcelo se incorporó a la concentración de Brasil para el Mundial</h2>
+    <p>27 de Mayo del 2014 / Marcelo, lateral izquierdo del Real Madrid, se incorporó este martes a la concentración de la selección brasileña en la ciudad brasileña de Teresópolis, de cara al Mundial que comienza dentro de 16 días.</p></a>
+    </li>
+    <li><a href="#noticia5">
+        <img src="img/jetro enc.jpg">
+    <h2>Gobierno de Ecuador rindió homenaje a los jugadores que van al Mundial</h2>
+    <p>21 de Mayo del 2014 / El gobierno ecuatoriano que preside Rafael Correa brindó este lunes un homenaje de despedida a los seleccionados ecuatorianos que participarán en el Mundial de Brasil.</p></a>
+    </li>
+</ul>
 </div>    
 
-<div data-role="footer" data-theme="b" data-position="fixed">
+<div data-role="footer" data-theme="c" data-position="fixed">
 	<div data-role="navbar">
    		 <ul>
-        	<li><a href="#pag1" class="ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
+        	<li><a href="#trivia" class="ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
        	 	<li><a href="#index" class="ui-btn-active ui-state-persist ui-icon-info ui-btn-icon-top">Noticias Brasil 2014 Minuto a Minuto</a></li>
-        	<li><a href="#pag3" class="ui-icon-grid ui-btn-icon-top">Programación</a></li>
+        	<li><a href="#programacion" class="ui-icon-grid ui-btn-icon-top">Programación</a></li>
     	 </ul>
     </div>
 </div>
-</div><!-- Fin página 1 -->
+</div><!-- Fin página noticias -->
 
-
-
-<div data-role="page" id="pag1"><!-- Página 2 -->
+<div data-role="page" id="noticia1" data-theme="b"><!-- Noticia 1 -->
 	<div data-theme="b" data-role="header" data-position="fixed">
+		   	<img src="img/logo.png">
+        	<h6>
+			Gol Pasión 2014
+			</h6>
+     </div>
+     <div role="main" class="ui-content">
+	<div class="fotos">
+		<img src="img/Roy Hodgson.jpg">
+        <h6>                                 EFE</h6>
+	</div>
+
+	<div data-controltype="textblock">
+    	<h4>DT de México ve al equipo en condiciones óptimas para el Mundial</h4>
+		<p style="text-align: justify;">
+			<span>
+      El seleccionador mexicano Miguel Herrera dijo este lunes que México llegará a Brasil-2014 en "condiciones óptimas" y con expectativas más allá de la primera ronda donde se medirá a Camerún, Brasil y Croacia.<br>
+
+      <br>"La expectativa de México es regresar el 14 de julio", declaró Herrera en una conferencia de prensa posterior al entrenamiento de México en el Estadio Azteca, donde este miércoles se medirá con Israel en un amistoso de preparación.<br>
+
+	   <br>El técnico mexicano reiteró así los objetivos públicos del equipo mexicano de superar la primera ronda para igualar los resultados obtenidos en las últimas seis Copas del Mundo, para después intentar establecer un hito en la historia de México en los Mundiales.<br>
+		  <br>Herrera, quien dirige a la selección mexicana desde el repechaje de noviembre pasado, reiteró que tiene el tiempo suficiente para que el equipo seleccionado alcance su mejor momento de cara a su debut en la Copa el 13 de junio contra Camerún, en Natal.<br>
+	    <br>La selección mexicana comenzó sus trabajos para el Mundial el pasado 12 de mayo, pero no fues hasta este lunes cuando el técnico ha tenido por primera vez a los 23 convocados para un entrenamiento y un amistoso.<br>
+	 <br>"Los días que tenemos para trabajar nos darán para llegar en óptimas condiciones", declaró Herrera en el estadio Azteca, donde se tomó una foto con su equipo técnico que publicó en su cuenta oficial de Twitter @MiguelHerreraDT.<br>
+	    <br>El técnico confirmó que para el encuentro frente a Israel, que fue anunciado como la despedida de su afición, participará el veterano Cuauhtémoc Blanco como parte del homenaje que se le hará por su trayectoria con la selección mexicana, con la que jugó las Copas del Mundo de Francia 1998, Corea-Japón 2002 y Sudáfrica 2010.<br>
+        <br>Blanco comenzará el partido contra Israel en un cuadro que completan Jesús Corona; Carlos Salcido, Diego Reyes, Francisco Rodríguez, Miguel Layún, Paul Aguilar, Marco Fabián, Miguel Herrera, Isaac Brizuela y Oribe Peralta.<br>
+        <br>Herrera indicó que se ha mantenido atento a sus rivales y destacó el hecho de que la selección de Camerún todavía se encuentra en una etapa de pruebas y tiene que hacer un recorte final de los 28 que tiene actualmente.<br>
+        <br>EFE
+		  </span>
+	  </p>
+      <a href="#" class="ui-btn" data-rel="back">Volver</a>
+	</div>
+</div>    
+
+<div data-role="footer" data-theme="c" data-position="fixed">
+	<div data-role="navbar">
+   		 <ul>
+        	<li><a href="#trivia" class="ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
+       	 	<li><a href="#index" class="ui-btn-active ui-state-persist ui-icon-info ui-btn-icon-top">Noticias Brasil 2014 Minuto a Minuto</a></li>
+        	<li><a href="#programacion" class="ui-icon-grid ui-btn-icon-top">Programación</a></li>
+    	 </ul>
+    </div>
+</div>
+</div><!-- Fin noticias 1 -->
+
+<div data-role="page" id="noticia2" data-theme="b"><!-- Noticia 2 -->
+	<div data-theme="b" data-role="header" data-position="fixed">
+		   	<img src="img/logo.png">
+        	<h6>
+			Gol Pasión 2014
+			</h6>
+     </div>
+     <div role="main" class="ui-content">
+		<div class="fotos">
+		<img src="img/seleccioncolombia.jpg" align="absbottom">
+        <h6>                    EFE</h6>
+	</div>
+
+	<div data-controltype="textblock">
+    <h4>La Selección de Argentina comenzó sus entrenamientos para el Mundial</h4>
+		<p style="text-align: justify;">
+			<span>
+                    La selección argentina comenzó este lunes, en doble turno, sus entrenamientos oficiales de preparación para su participación en el Mundial de Brasil 2014.<br>
+<br>Con 24 jugadores, el técnico Alejandro Sabella dispuso por la mañana de una charla de grupo con exámenes médicos y físicos. En este primer contacto con todo el grupo, el técnico presentó el plan de entrenamientos hasta el 9 de junio, cuando la selección albiceleste se trasladará hasta Belo Horizonte.<br>
+<br>Por la tarde, con la incorporación de José Sosa, los citados realizaron ejercicios tácticos y técnicos en el campo de juego del predio que la Asociación del Fútbol Argentino tiene en la localidad bonaerense de Ezeiza, a 35 kilómetros al sur de la capital.<br>
+<br>El técnico Alejandro Sabella coordinó los trabajos con sus ayudantes, Julián Caminos y Claudio Gugnali, y el preparador físico Pablo Blanco. El único con licencia hasta el viernes para sumarse a las prácticas es Ángel Di María, que llegará este martes a Buenos Aires tras participar en los festejos del Real Madrid por su décima Liga de Campeones.<br>
+<br>Augusto Fernández, quien se recupera de un esguince en su rodilla derecha, realizó trabajos diferenciados, al igual que Fernando Gago y Ever Banega, que también están finalizando sus rehabilitaciones.<br>
+<br>Antes del 2 de junio, el técnico Alejandro Sabella deberá definir los tres jugadores que quedarán al margen de la plantilla para definir los 23 mundialistas que representarán al elenco albiceleste en Brasil. Asimismo, el conjunto argentino tiene previsto disputar dos encuentros amistosos antes de viajar a Brasil.<br>
+<br>El 4 de junio se medirá con Trinidad y Tobago en el estadio de River Plate y tres días después se medirá con Eslovenia en la ciudad de La Plata. Luego de la jornada con doble actividad, los jugadores quedaron concentrados en el predio y mañana tendrán actividad con estudios médicos y unos movimientos livianos antes de quedar liberados por la tarde.<br>
+<br>EFE
+			</span>
+		</p>
+        <a href="#" class="ui-btn" data-rel="back">Volver</a>
+	</div>
+</div>    
+
+<div data-role="footer" data-theme="c" data-position="fixed">
+	<div data-role="navbar">
+   		 <ul>
+        	<li><a href="#trivia" class="ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
+       	 	<li><a href="#index" class="ui-btn-active ui-state-persist ui-icon-info ui-btn-icon-top">Noticias Brasil 2014 Minuto a Minuto</a></li>
+        	<li><a href="#programacion" class="ui-icon-grid ui-btn-icon-top">Programación</a></li>
+    	 </ul>
+    </div>
+</div>
+</div><!-- Fin noticias 2 -->
+
+<div data-role="page" id="noticia3" data-theme="b"><!-- Noticia 3 -->
+	<div data-theme="b" data-role="header" data-position="fixed">
+		   	<img src="img/logo.png">
+        	<h6>
+			Gol Pasión 2014
+			</h6>
+     </div>
+     <div role="main" class="ui-content">
+	<div class="fotos">
+		<img src="img/copacabanaincendio.jpg">
+        <h6>                AFP</h6>
+	</div>
+
+	<div data-controltype="textblock">
+    	<h4>Japón, rival de Colombia, venció 1-0 a Chipre en amistoso</h4>
+		<p style="text-align: justify;">
+			<span>
+     La Selección de Japón se impuso 1-0 este martes a la de Chipre y sin grandes aprietos en un partido en el que los 'Samurai blue' se mostraron faltos de ritmo e ideas.<br>
+<br>En el primer acto Japón se mostró más espeso que nunca e incluso le costó llevar la batuta del encuentro por momentos, aunque Uchida tuvo la fortuna de anotar poco antes del descanso al rematar una carambola que vino precedida de una jugada bien trenzada por Okazaki y Kagawa.<br>
+<br>Probablemente la mejor noticia para el cuadro nipón fue que el encuentro sirvió para darle minutos a Kagawa, quien pareció acusar especialmente su suplencia este año en el Manchester United.<br>
+<br>En el segundo tiempo los asiáticos apretaron algo más y buscaron el segundo con la entrada de su veterano delantero Okubo pero carecieron de claridad de ideas y cerraron casi todos sus acercamientos de manera embarullada, al igual que sucedió en el gol de Uchida.<br>
+<br>Tras este primer ensayo, a Japón le quedan los amistosos que jugará en Tampa (Estados Unidos) frente a Costa Rica (el 2 de junio) y Zambia (el 6 de junio) antes de citarse en el Mundial de Brasil 2014 con sus rivales de grupo: Costa de Marfil, Grecia y Colombia.<br>
+<br><h4>Síntesis</h4>
+<p style="text-align: justify;">
+<br>Japón: Ishikawa, Uchida (H.Sakai, min.45), Morishige, Konno (Yoshida, min.45), Nagatomo (Inoha, min.79); Yamaguchi, Endo (Hasebe, min.45); Okazaki (Kiyotake, min.71) Honda, Kagawa y Kakitani (Okubo, min.58).<br>
+<br>JChipre: Constantinou; A. Charalampous, Merkis, Stylianou, I.Charalambous (Vasiliou, min.71); Laban (Dobrasinovic, min.65), Nicolaou (Aresti, min.83); Kyriakou, Makrides (Sielis, min.90), Efrem y Mitidis (Soteriou, min.73).<br>
+<br>Goles: 1-0. min.43: Uchida. Árbitro: Pavel Raczkowski (POL). Mostró tarjeta amarilla a Okazaki (Min.28).<br>
+<br>Incidencias: Partido amistoso de preparación para el Mundial de Brasil 2014 disputado en el Estadio 2002 en la prefectura japonesa de Saitama. Temperatura de 24 grados centígrados con un índice de humedad del 71 por ciento.<br></p>
+<br>EFE
+		  </span>
+	  </p>
+      <a href="#" class="ui-btn" data-rel="back">Volver</a>
+	</div>
+</div>    
+
+<div data-role="footer" data-theme="c" data-position="fixed">
+	<div data-role="navbar">
+   		 <ul>
+        	<li><a href="#trivia" class="ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
+       	 	<li><a href="#index" class="ui-btn-active ui-state-persist ui-icon-info ui-btn-icon-top">Noticias Brasil 2014 Minuto a Minuto</a></li>
+        	<li><a href="#programacion" class="ui-icon-grid ui-btn-icon-top">Programación</a></li>
+    	 </ul>
+    </div>
+</div>
+</div><!-- Fin noticias 3 -->
+
+<div data-role="page" id="noticia4" data-theme="b"><!-- Noticia 4 -->
+	<div data-theme="b" data-role="header" data-position="fixed">
+		   	<img src="img/logo.png">
+        	<h6>
+			Gol Pasión 2014
+			</h6>
+     </div>
+     <div role="main" class="ui-content">
+	<div class="fotos">
+		<img src="img/sexoycahos.jpg">
+        <h6>                 Reuters</h6>
+	</div>
+
+	<div data-controltype="textblock">
+    	<h4>Marcelo se incorporó a la concentración de Brasil para el Mundial</h4>
+		<p style="text-align: justify;">
+			<span>
+      Marcelo, lateral izquierdo del Real Madrid, se incorporó este martes a la concentración de la selección brasileña en la ciudad brasileña de Teresópolis, de cara al Mundial que comienza dentro de 16 días.<br>
+<br>El lateral llegó a la Granja Comary, cuartel general de la selección brasileña, en un automóvil negro, a las diez y media de la mañana, hora local, 24 horas después de sus 22 compañeros de equipo.</br>
+<br>Nada más llegar al centro de entrenamiento Marcelo fue a saludar a sus compañeros, que estaban realizando los exámenes físicos en el gimnasio a pie de campo, y también a los tres porteros, Julio César, Jefferson y Víctor, que estaban entrenándose.</br>
+ 
+<br>El seleccionador brasileño, Luiz Felipe Scolari, dio total libertad a Marcelo, dejándole elegir la fecha de su llegada a la concentración, para que pudiera participar en los festejos del Real Madrid por su triunfo en la Liga de Campeones.</br>
+<br>Marcelo decidió incorporarse este martes a la concentración por iniciativa propia, según afirmó el coordinador técnico de Brasil, Carlos Alberto Parreira.</br>
+<br>Los tres guardametas se adelantaron hoy a la planificación de la selección, que sólo tenía previsto el inicio de los entrenamientos mañana, y este martes iniciaron el trabajo con balón con el preparador de porteros, Carlos Pracidelli.</br>
+ <br>El primer entrenamiento estuvo marcado por un clima desapacible, típico de la sierra de Río de Janeiro en esta época del año, con ligera niebla y unos 15 grados de temperatura.</br>
+<br>Scolari dejó este martes la concentración y viajó a su estado natal, Río Grande do Sul, en el sur de Brasil, para acudir al funeral de un pariente que falleció este lunes, según informó la Confederación Brasileña de Fútbol (CBF).</br>
+<br>El entrenador tiene previsto regresar a Teresópolis, ciudad a 100 kilómetros de Río de Janeiro, hoy por la noche.</br>
+
+<br>EFE
+			</span>
+		</p>
+        <a href="#" class="ui-btn" data-rel="back">Volver</a>
+	</div>
+</div>    
+
+<div data-role="footer" data-theme="c" data-position="fixed">
+	<div data-role="navbar">
+   		 <ul>
+        	<li><a href="#trivia" class="ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
+       	 	<li><a href="#index" class="ui-btn-active ui-state-persist ui-icon-info ui-btn-icon-top">Noticias Brasil 2014 Minuto a Minuto</a></li>
+        	<li><a href="#programacion" class="ui-icon-grid ui-btn-icon-top">Programación</a></li>
+    	 </ul>
+    </div>
+</div>
+</div><!-- Fin noticias 4 -->
+
+<div data-role="page" id="noticia5" data-theme="b"><!-- Noticia 5 -->
+	<div data-theme="b" data-role="header" data-position="fixed">
+		   	<img src="img/logo.png">
+        	<h6>
+			Gol Pasión 2014
+			</h6>
+     </div>
+     <div role="main" class="ui-content">
+	<div class="fotos">
+		<img src="img/jetro.jpg">
+        <h6>            EFE</h6>
+	</div>
+
+	<div data-controltype="textblock">
+    	<h4>Gobierno de Ecuador rindió homenaje a los jugadores que van al Mundial</h4>
+		<p style="text-align: justify;">
+			<span>
+      El gobierno ecuatoriano que preside Rafael Correa brindó este lunes un homenaje de despedida a los seleccionados ecuatorianos que participarán en el Mundial de Brasil.<br>
+<br>"Los ecuatorianos podemos lograr lo que nos propongamos y eso lo está demostrando nuestra selección, que participará por tercera ocasión en un Mundial, con sobra de merecimientos", señaló el presidente Correa, quien recibió a representantes del equipo en el Palacio de Carondelet, sede de la Presidencia.<br>
+<br>El gobernante hizo la entrega de una bandera al capitán de Ecuador, Luis Antonio Valencia, quien aseguró que el equipo dejará "muy en alto durante el Mundial" los colores de la bandera.<br>
+<br>"Podemos empatar, ganar o perder, pero estos colores se los llevará al frente, dentro de la cancha", agregó.<br>
+<br>Entretanto, Luis Chiriboga, presidente de la Federación Ecuatoriana de Fútbol (FEF), recordó el debut de Ecuador en el Mundial de Corea del Sur y Japón 2002, y la participación en Alemania 2006. "Tenemos un equipo solidario, leal. Una selección muy fuerte que entregará lo mejor, que tendrá el mismo derecho de todo los equipos para lograr el título Mundial en Brasil", aseveró el directivo.<br>
+<br>El acto, que concluyó con un almuerzo, se realizó en el Palacio de Gobierno en la capital ecuatoriana, en medio de una gran asistencia de aficionados que llegaron para, con cánticos, motivar a la plantilla liderada por el centrocampista Valencia.<br>
+<br>Los futbolistas, el seleccionador Reinaldo Rueda y el presidente de la federación presenciaron el tradicional relevo de la Guardia, que se efectúa todos los lunes.<br>
+<br>El ministro del Deporte, José Francisco Cevallos, la ministra coordinadora de Desarrollo Social, Cecilia Vaca, y el vicepresidente Jorge Glas estuvieron también presentes.<br>
+<br>Antes del homenaje gubernamental, la Asamblea Nacional, presidida por Gabriela Rivadeneira, reconoció a los seleccionados, cuerpo técnico comandado por Rueda y directivos por Luis Chiriboga, con la distinción "Doctor Vicente Rocafuerte" al mérito deportivo.<br>
+<br>Ecuador jugará dos amistosos antes del Mundial, el próximo sábado contra México y el 4 de junio frente a Inglaterra, ambos en Estados Unidos. La selección ecuatoriana integra el Grupo E del Mundial de Brasil junto a Suiza, Francia y Honduras.<br>
+<br>Debutará en el Mundial el domingo 15 de junio, en Brasilia, ante Suiza y el viernes 20 de junio jugará contra Honduras, en Curitiba, para disputar su último partido de la primera fase en Río de Janeiro, el miércoles 25 de junio contra Francia.<br>
+<br>EFE
+			</span>
+		</p>
+	</div>
+    <a href="#" class="ui-btn" data-rel="back">Volver</a>
+</div>    
+
+<div data-role="footer" data-theme="c" data-position="fixed">
+	<div data-role="navbar">
+   		 <ul>
+        	<li><a href="#trivia" class="ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
+       	 	<li><a href="#index" class="ui-btn-active ui-state-persist ui-icon-info ui-btn-icon-top">Noticias Brasil 2014 Minuto a Minuto</a></li>
+        	<li><a href="#programacion" class="ui-icon-grid ui-btn-icon-top">Programación</a></li>
+    	 </ul>
+    </div>
+</div>
+</div><!-- Fin noticias 5 -->
+
+<div data-role="page" id="trivia" data-theme="c"><!-- Página menu trivia -->
+	<div data-theme="c" data-role="header" data-position="fixed">
 		<img src="img/logo.png">
 			<h3>
         Gol Pasión 2014
@@ -93,10 +311,10 @@
 		</p>
 	</div>
 	<div data-role="fieldcontain" data-controltype="textinput">
-            <label for="textinput3">
+            <label for="nombreCompleto">
                 Nombre completo:
             </label>
-            <input name="" id="textinput3" placeholder="" value="" type="text">
+            <input name="" id="nombreCompleto" placeholder="" value="" type="text">
 	</div>
 	<div data-role="fieldcontain" data-controltype="textinput">
             <label for="textinput4">
@@ -105,47 +323,416 @@
             <input name="" id="textinput4" placeholder="" value="" type="text">
 	</div>
     <div>
-        <a data-role="button" href="#page1">
+        <a id="iniciarTrivia" data-role="button" href="#triviacategoria">
             Aceptar
         </a>
     </div>
-</div>
-    
-    <div data-role="footer" data-theme="b" data-position="fixed">
+    <script>
+		$('#iniciarTrivia').click(function(e) {
+            nombreConcursante = $('#nombreCompleto').val();
+			$('#triviacategoria .ui-content h3 span').html(nombreConcursante);
+        });
+	</script>
+    <div data-role="footer" data-theme="a" data-position="fixed">
     	<div data-role="navbar">
    		 <ul>
-        	<li><a href="#pag1" class="ui-btn-active ui-state-persist ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
+        	<li><a href="#trivia" class="ui-btn-active ui-state-persist ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
        	 	<li><a href="#index" class="ui-icon-info ui-btn-icon-top">Noticias Brasil 2014 Minuto a Minuto</a></li>
-        	<li><a href="#pag3" class="ui-icon-grid ui-btn-icon-top">Programación</a></li>
+        	<li><a href="#programacion" class="ui-icon-grid ui-btn-icon-top">Programación</a></li>
     	 </ul>
          </div>
     </div>
-</div><!-- Fin página 2 -->    
+    </div>
+</div>    
+</div><!-- fin Página menu trivia -->    
+
+<div data-role="page" id="triviacategoria" data-theme="c"><!-- Página menu trivia categorias -->
+	<div data-theme="c" data-role="header" data-position="fixed">
+		<img src="img/logo.png">
+			<h3>
+        Gol Pasión 2014
+			</h3>
+	</div>
+
+<div role="main" class="ui-content">
+	   <h3>Bienvenido <span></span>!! , por favor selecciona tu categoria:</h3>
+    <ul data-role="listview">
+    <li><a href="#generalidades">Generalidades de los mundiales</a></li>
+    <li><a href="#jugadores">Jugadores Veteranos de los mundiales</a></li>
+    <li><a href="#mascotas">Mascotas y balones de los mundiales</a></li>
+    </ul>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+    	<div data-role="navbar">
+   		 <ul>
+        	<li><a href="#trivia" class="ui-btn-active ui-state-persist ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
+       	 	<li><a href="#index" class="ui-icon-info ui-btn-icon-top">Noticias Brasil 2014 Minuto a Minuto</a></li>
+        	<li><a href="#programacion" class="ui-icon-grid ui-btn-icon-top">Programación</a></li>
+    	 </ul>
+         </div>
+</div>
+</div><!-- fin Página menu trivia categorias -->
+
+<div data-role="page" id="generalidades" data-theme="c"><!-- Página generalidades -->
+	<div data-theme="c" data-role="header" data-position="fixed">
+		<img src="img/logo.png">
+			<h3>
+        Gol Pasión 2014
+			</h3>
+	</div>
+    
+    <div role="main" class="ui-content">
+        	<h3>Generalidades de los mundiales</h3>
+            <form>
+			<fieldset data-role="controlgroup">
+    			<legend style="text-align:justify">1. ¿Cuántas copas se han disputado contando la del 2010?:</legend>
+    			<input type="radio" name="generalidadesA" id="generalidades1" value="1.1.1">
+    			<label for="generalidades1">15</label>
+    			<input type="radio" name="generalidadesA" id="generalidades2" value="1.1.2">
+    			<label for="generalidades2">19</label>
+    			<input type="radio" name="generalidadesA" id="generalidades3" value="1.1.3">
+    			<label for="generalidades3">21</label>
+                <input type="radio" name="generalidadesA" id="generalidades4" value="1.1.4">
+    			<label for="generalidades4">17</label>
+                </fieldset>
+			<fieldset data-role="controlgroup">
+				<legend style="text-align:justify">2. ¿De qué material es la primera copa del mundo?:</legend>
+    			<input type="radio" name="generalidadesB" id="generalidades5" value="1.2.1">
+    			<label for="generalidades5">Oro y oro blanco</label>
+    			<input type="radio" name="generalidadesB" id="generalidades6" value="1.2.2">
+    			<label for="generalidades6">Plata y bronce</label>
+    			<input type="radio" name="generalidadesB" id="generalidades7" value="1.2.3">
+    			<label for="generalidades7">Plata y oro</label>
+                <input type="radio" name="generalidadesB" id="generalidades8" value="1.2.4">
+    			<label for="generalidades8">Plata chapada en oro</label>
+			</fieldset>
+			<fieldset data-role="controlgroup">
+    			<legend style="text-align:justify">3. ¿Actualmente qué recibe el equipo ganador de cada mundial?:</legend>
+    			<input type="radio" name="generalidadesC" id="generalidades9" value="1.3.1">
+    			<label for="generalidades9">La copa original por cuatro años y una copia</label>
+    			<input type="radio" name="generalidadesC" id="generalidades10" value="1.3.2">
+    			<label for="generalidades10">La copa original</label>
+    			<input type="radio" name="generalidadesC" id="generalidades11" value="1.3.3">
+    			<label for="generalidades11">Una copia de la copa original</label>
+                <input type="radio" name="generalidadesC" id="generalidades12" value="1.3.4">
+    			<label for="generalidades12">La copa original por cuatro años</label>
+			</fieldset>
+			<fieldset data-role="controlgroup">
+    			<legend style="text-align:justify">4. ¿Cuántas copas ha existido?:</legend>
+    			<input type="radio" name="generalidadesD" id="generalidades13" value="1.4.1">
+    			<label for="generalidades13">1</label>
+    			<input type="radio" name="generalidadesD" id="generalidades14" value="1.4.2">
+    			<label for="generalidades14">2</label>
+    			<input type="radio" name="generalidadesD" id="generalidades15" value="1.4.3">
+    			<label for="generalidades15">3</label>
+                <input type="radio" name="generalidadesD" id="generalidades16" value="1.4.4">
+    			<label for="generalidades16">Una por cada mundial</label>
+			</fieldset>
+			<fieldset data-role="controlgroup">
+    			<legend style="text-align:justify">5. ¿Quién fue el diseñador de la copa que se entrego en el mundial de 1970?:</legend>
+    			<input type="radio" name="generalidadesE" id="generalidades17" value="1.5.1">
+    			<label for="generalidades17">Jules Rimet</label>
+    			<input type="radio" name="generalidadesE" id="generalidades18" value="1.5.2">
+    			<label for="generalidades18">Silvio Gazzaniga</label>
+    			<input type="radio" name="generalidadesE" id="generalidades19" value="1.5.3">
+    			<label for="generalidades19">Bertoni</label>
+                <input type="radio" name="generalidadesE" id="generalidades20" value="1.5.4">
+    			<label for="generalidades20">Abel Lafleur</label>
+			</fieldset>
+            <input id="aceptarGeneralidades" name="Aceptar" type="submit" value="Aceptar">
+		</form>
+        <script>
+			$('#aceptarGeneralidades').click(function(e) {
+				e.preventDefault();
+                var correctos = new Array('1.1.2','1.2.4','1.3.1','1.4.2','1.5.4');
+				var puntaje = 0;
+				$('#generalidades input:checked').each(function(index, element) {
+                    if (correctos.indexOf($(this).val()) > -1) {
+						puntaje++;
+					}
+                });
+				puntajeTrivia += puntaje;
+				$("#popupGeneralidades .ui-content p span").html(puntaje);
+				$("#popupGeneralidades").popup("open");
+            });
+		</script>
+        
+		<div data-role="popup" id="popupGeneralidades" data-dismissible="false">
+            <div data-role="header">
+            	<h1>Resultados</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <h3 class="ui-title">Sus respuestas han sido procesadas</h3>
+            	<p>Resultado: <span></span> </p>
+                <a href="#triviacategoria" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Aceptar</a>
+            </div>
+        </div>
+    </div>
+    
+    <div data-role="footer" data-theme="a" data-position="fixed">
+            <div data-role="navbar">
+             <ul>
+                <li><a href="#trivia" class="ui-btn-active ui-state-persist ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
+       	 		<li><a href="#index" class="ui-icon-info ui-btn-icon-top">Noticias Brasil 2014 Minuto a Minuto</a></li>
+        		<li><a href="#programacion" class="ui-icon-grid ui-btn-icon-top">Programación</a></li>
+             </ul>
+            </div>
+        </div>
+</div><!-- fin Página generalidades -->
+
+<div data-role="page" id="jugadores" data-theme="c"><!-- Página jugadores veteranos -->
+	<div data-theme="c" data-role="header" data-position="fixed">
+		<img src="img/logo.png">
+			<h3>
+        Gol Pasión 2014
+			</h3>
+	</div>
+    
+    <div role="main" class="ui-content">
+    	<h3>Jugadores Veteranos de los mundiales</h3>
+        	<form>
+			<fieldset data-role="controlgroup">
+    			
+    			<legend style="text-align:justify">1. Goleador de Camerún retirado oficialmente del fútbol internacional; fue llamado por el presidente de su país y lo convenció de jugar el Mundial Italia 1990:</legend>
+		    	<input type="radio" name="jugadoresA" id="jugadores1" value="2.1.1">
+    			<label for="jugadores1">Thomas Nkono</label>
+    			<input type="radio" name="jugadoresA" id="jugadores2" value="2.1.2">
+    			<label for="jugadores2">Roger Milla</label>
+    			<input type="radio" name="jugadoresA" id="jugadores3" value="2.1.3">
+    			<label for="jugadores3">Alphonse Yombi</label>
+                <input type="radio" name="jugadoresA" id="jugadores4" value="2.1.4">
+    			<label for="jugadores4">Roger Feutmba</label>
+			</fieldset>
+			<fieldset data-role="controlgroup">
+    			<legend style="text-align:justify">2. Ganó seis veces la Serie A de Italia antes de encabezar a su equipo en la Copa del Mundo 1982, que se disputó en España:</legend>
+    			<input type="radio" name="jugadoresB" id="jugadores5" value="2.2.1">
+    			<label for="jugadores5">Antonio Cabrini</label>
+    			<input type="radio" name="jugadoresB" id="jugadores6" value="2.2.2">
+    			<label for="jugadores6">Giampiero Marini</label>
+    			<input type="radio" name="jugadoresB" id="jugadores7" value="2.2.3">
+    			<label for="jugadores7">Alessandro Altobelli</label>
+                <input type="radio" name="jugadoresB" id="jugadores8" value="2.2.4">
+    			<label for="jugadores8">Dino Zoff</label>
+			</fieldset>
+			<fieldset data-role="controlgroup">
+    			<legend style="text-align:justify">3. Legendario mediocampista alemán, jugó cinco Copas Mundiales y ostenta el récord individual de 25 apariciones:</legend>
+    			<input type="radio" name="jugadoresC" id="jugadores9" value="2.3.1">
+    			<label for="jugadores9">Lothar Matthaus</label>
+    			<input type="radio" name="jugadoresC" id="jugadores10" value="2.3.2">
+    			<label for="jugadores10">Michael Tarnat</label>
+    			<input type="radio" name="jugadoresC" id="jugadores11" value="2.3.3">
+    			<label for="jugadores11">Pierre Littbarski</label>
+                <input type="radio" name="jugadoresC" id="jugadores12" value="2.3.4">
+    			<label for="jugadores12">Karl Allgoewer</label>
+			</fieldset>
+			<fieldset data-role="controlgroup">
+    			<legend style="text-align:justify">4. Jugador italiano que tuvo su oportunidad de jugar la final contra Brasil en 1994, erró su tiro en la serie de penales garantizándole el triunfo a Brasil:</legend>
+    			<input type="radio" name="jugadoresD" id="jugadores13" value="2.4.1">
+    			<label for="jugadores13">Paolo Maldini</label>
+    			<input type="radio" name="jugadoresD" id="jugadores14" value="2.4.2">
+    			<label for="jugadores14">Demetrio Albertini</label>
+    			<input type="radio" name="jugadoresD" id="jugadores15" value="2.4.3">
+    			<label for="jugadores15">Franco Baresi</label>
+                <input type="radio" name="jugadoresD" id="jugadores16" value="2.4.4">
+    			<label for="jugadores16">Mauro Tassotti</label>
+			</fieldset>
+			<fieldset data-role="controlgroup">
+    			<legend style="text-align:justify">5. Jugador brasileño y líder de todos los tiempos en apariciones con la selección brasileña, ha ganado en dos oportunidades la copa:</legend>
+    			<input type="radio" name="jugadoresE" id="jugadores17" value="2.5.1">
+    			<label for="jugadores17">Cafú</label>
+    			<input type="radio" name="jugadoresE" id="jugadores18" value="2.5.2">
+    			<label for="jugadores18">Roberto Carlos</label>
+    			<input type="radio" name="jugadoresE" id="jugadores19" value="2.5.3">
+    			<label for="jugadores19">Ronaldinho</label>
+                <input type="radio" name="jugadoresE" id="jugadores20" value="2.5.4">
+    			<label for="jugadores20">Ronaldo</label>
+			</fieldset>
+            <input id="aceptarJugadores" name="Aceptar" type="submit" value="Aceptar">
+		</form>
+        <script>
+			$('#aceptarJugadores').click(function(e) {
+				e.preventDefault();
+                var correctos = new Array('2.1.2','2.2.4','2.3.1','2.4.3','2.5.1');
+				var puntaje = 0;
+				$('#jugadores input:checked').each(function(index, element) {
+                    if (correctos.indexOf($(this).val()) > -1) {
+						puntaje++;
+					}
+                });
+				puntajeTrivia += puntaje;
+				$("#popupJugadores .ui-content p span").html(puntaje);
+				$("#popupJugadores").popup("open");
+            });
+		</script>
+        
+		<div data-role="popup" id="popupJugadores" data-dismissible="false">
+            <div data-role="header">
+            	<h1>Resultados</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <h3 class="ui-title">Sus respuestas han sido procesadas</h3>
+            	<p>Resultado: <span></span> </p>
+                <a href="#triviacategoria" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Aceptar</a>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div data-role="footer" data-theme="a" data-position="fixed">
+            <div data-role="navbar">
+             <ul>
+                <li><a href="#trivia" class="ui-btn-active ui-state-persist ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
+       	 		<li><a href="#index" class="ui-icon-info ui-btn-icon-top">Noticias Brasil 2014 Minuto a Minuto</a></li>
+        		<li><a href="#programacion" class="ui-icon-grid ui-btn-icon-top">Programación</a></li>
+             </ul>
+            </div>
+        </div>
+</div><!-- fin Página jugadores veteranos -->
+
+<div data-role="page" id="mascotas" data-theme="c"><!-- Página mascotas y balones-->
+	<div data-theme="c" data-role="header" data-position="fixed">
+		<img src="img/logo.png">
+			<h3>
+        Gol Pasión 2014
+			</h3>
+	</div>
+    
+    <div role="main" class="ui-content">
+    <h3>Mascotas y balones de los mundiales</h3>
+        	<form>
+			<fieldset data-role="controlgroup">
+            
+   			  <legend style="text-align:justify">1. El león futbolista conocido como World Cup Willie fue la mascota del mundial:</legend>
+		        <input type="radio" name="mascotasA" id="mascotas1" value="3.1.1">
+    			<label for="mascotas1">Estados Unidos 1994</label>
+    			
+                <input type="radio" name="mascotasA" id="mascotas2" value="3.1.2">
+    			<label for="mascotas2">Inglaterra 1966</label>
+    			
+                <input type="radio" name="mascotasA" id="mascotas3" value="3.1.3">
+    			<label for="mascotas3">Australia 1934</label>
+                
+                <input type="radio" name="mascotasA" id="mascotas4" value="3.1.4">
+    			<label for="mascotas4">Canadá 1954</label>
+			</fieldset>
+			<fieldset data-role="controlgroup">
+    			<legend style="text-align:justify">2. Federale es el nombre de la pelota oficial del mundial:</legend>
+                
+    			<input type="radio" name="mascotasB" id="mascotas5" value="3.2.1">
+    			<label for="mascotas5">Italia 1990</label>
+                
+    			<input type="radio" name="mascotasB" id="mascotas6" value="3.2.2">
+    			<label for="mascotas6">Italia 1932</label>
+                
+    			<input type="radio" name="mascotasB" id="mascotas7" value="3.2.3">
+    			<label for="mascotas7">Italia 1934</label>
+                
+                <input type="radio" name="mascotasB" id="mascotas8" value="3.2.4">
+    			<label for="mascotas8">Italia 1930</label>
+			</fieldset>
+			<fieldset data-role="controlgroup">
+    			<legend style="text-align:justify">3. ¿Cómo se llama la mascota de Mexico 1986?:</legend>
+                
+    			<input type="radio" name="mascotasC" id="mascotas9" value="3.3.1">
+    			<label for="mascotas9">Chile</label>
+                
+    			<input type="radio" name="mascotasC" id="mascotas10" value="3.3.2">
+    			<label for="mascotas10">Pique</label>
+                
+    			<input type="radio" name="mascotasC" id="mascotas11" value="3.3.3">
+    			<label for="mascotas11">Elote</label>
+                
+                <input type="radio" name="mascotasC" id="mascotas12" value="3.3.4">
+    			<label for="mascotas12">Ninguno de los anteriores</label>
+                </fieldset>
+			<fieldset data-role="controlgroup">
+    			<legend style="text-align:justify">4. ¿Crack fue el nombre del balón del mundial?:</legend>
+    			<input type="radio" name="mascotasD" id="mascotas13" value="3.4.1">
+    			<label for="mascotas13">Brasil 1950</label>
+    			<input type="radio" name="mascotasD" id="mascotas14" value="3.4.2">
+    			<label for="mascotas14">Suiza 1954</label>
+    			<input type="radio" name="mascotasD" id="mascotas15" value="3.4.3">
+    			<label for="mascotas15">Suecia 1958</label>
+    			<input type="radio" name="mascotasD" id="mascotas16" value="3.4.4">
+    			<label for="mascotas16">Chile 1962</label>
+			</fieldset>
+			<fieldset data-role="controlgroup">
+    			<legend style="text-align:justify">5. ¿La mascota de Francia 1998 era?:</legend>
+    			<input type="radio" name="mascotasE" id="mascotas17" value="3.5.1">
+    			<label for="mascotas17">Un conejo</label>
+    			<input type="radio" name="mascotasE" id="mascotas18" value="3.5.2">
+    			<label for="mascotas18">Un leopardo</label>
+    			<input type="radio" name="mascotasE" id="mascotas19" value="3.5.3">
+    			<label for="mascotas19">Un gallo</label>
+                <input type="radio" name="mascotasE" id="mascotas20" value="3.5.4">
+                <label for="mascotas20">Un delfín</label>
+			</fieldset>
+            <input id="aceptarMascotas" name="Aceptar" type="submit" value="Aceptar">
+		</form>
+        <script>
+			$('#aceptarMascotas').click(function(e) {
+				e.preventDefault();
+                var correctos = new Array('3.1.2','3.2.3','3.3.2','3.4.4','3.5.3');
+				var puntaje = 0;
+				$('#mascotas input:checked').each(function(index, element) {
+                    if (correctos.indexOf($(this).val()) > -1) {
+						puntaje++;
+					}
+                });
+				puntajeTrivia += puntaje;
+				$("#popupMascotas .ui-content p span").html(puntaje);
+				$("#popupMascotas").popup("open");
+            });
+		</script>
+        
+		<div data-role="popup" id="popupMascotas" data-dismissible="false">
+            <div data-role="header">
+            	<h1>Resultados</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <h3 class="ui-title">Sus respuestas han sido procesadas</h3>
+            	<p>Resultado: <span></span> </p>
+                <a href="#triviacategoria" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Aceptar</a>
+            </div>
+        </div>
+    </div>
+    
+    <div data-role="footer" data-theme="a" data-position="fixed">
+            <div data-role="navbar">
+             <ul>
+                <li><a href="#trivia" class="ui-btn-active ui-state-persist ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
+       	 		<li><a href="#index" class="ui-icon-info ui-btn-icon-top">Noticias Brasil 2014 Minuto a Minuto</a></li>
+        		<li><a href="#programacion" class="ui-icon-grid ui-btn-icon-top">Programación</a></li>
+             </ul>
+            </div>
+        </div>
+</div><!-- fin Página mascotas y balones-->
 
 
-
-<div data-role="page" id="pag3"><!-- Página 3 -->
-    <div data-theme="b" data-role="header" data-position="fixed">
+<div data-role="page" id="programacion" data-theme="a"><!-- Página programacion -->
+    <div data-theme="a" data-role="header" data-position="fixed">
     	<img src="img/logo.png">
     		<h3>
         Gol Pasión 2014
     		</h3>
     </div>
     <div role="main" class="ui-content">
-    	<p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dui neque, condimentum nec odio eu, adipiscing convallis risus. Cras eget mollis eros. Nullam at facilisis ante, non scelerisque enim. Donec gravida in enim sit amet suscipit. Morbi in egestas arcu. Maecenas egestas magna in hendrerit lobortis. Nulla rhoncus aliquam bibendum. Maecenas euismod quis metus id dictum. Pellentesque nec commodo tortor. Nullam sed magna in enim semper aliquam. Donec urna enim, pharetra sit amet hendrerit nec, fermentum eu lectus. Praesent est elit, lacinia quis mauris vel, auctor lacinia felis. Quisque sit amet sapien arcu. Quisque lobortis leo non tellus condimentum condimentum.</p>
-      	<p style="text-align:justify">Duis facilisis dui erat, auctor hendrerit nisl tristique nec. Pellentesque consectetur nibh metus, ac rhoncus neque gravida ut. Nulla sed nibh vel erat mollis consequat. Aenean id risus at elit egestas pellentesque. Aliquam adipiscing, nisl in semper cursus, sem ante faucibus velit, non tincidunt nisl augue ut augue. Nam suscipit aliquam augue sed faucibus. In elit tellus, iaculis a nisl rhoncus, facilisis eleifend sem. Vestibulum tempus tortor at nulla dapibus condimentum a vel ligula. Morbi elementum purus in ipsum gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce id nisl in nunc tincidunt pretium eget id turpis.</p>
-      	<p style="text-align:justify">Fusce sed sapien vel lorem dignissim vehicula eget et sem. Nulla venenatis sagittis quam, at feugiat augue. Quisque posuere pharetra tempus. Ut lorem turpis, varius eu molestie non, tincidunt in arcu. Donec iaculis at diam non accumsan. Proin porttitor turpis arcu. In non arcu porttitor, rhoncus ipsum eget, imperdiet mauris. Nunc in facilisis nulla.</p>
+    <h3 style="text-align:center">Calendario Oficial</h3>
+    	<div style="overflow:auto">
+		<img src="img/programacion.jpg">
+		</div>
     </div>
     <div data-role="footer" data-theme="b" data-position="fixed">
     	<div data-role="navbar">
    		 <ul>
-        	<li><a href="#pag1" class="ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
+        	<li><a href="#trivia" class="ui-icon-bars ui-btn-icon-top">Trivia Mundial</a></li>
        	 	<li><a href="#index" class="ui-icon-info ui-btn-icon-top">Noticias Brasil 2014 Minuto a Minuto</a></li>
-        	<li><a href="#pag3" class="ui-btn-active ui-state-persist ui-icon-grid ui-btn-icon-top">Programación</a></li>
+        	<li><a href="#programacion" class="ui-btn-active ui-state-persist ui-icon-grid ui-btn-icon-top">Programación</a></li>
     	 </ul>
         </div>
     </div>
-</div><!-- Fin página 3 -->
+</div><!-- Fin página programacion -->
+
 
 
 </body>
